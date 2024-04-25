@@ -75,7 +75,7 @@ class CrptApi {
     ObjectMapper objectMapper = new ObjectMapper();
     private final int apiRequestLimit;
 
-    private CrptApi(TimeUnit timeUnit, int requestLimit) {
+    public CrptApi(TimeUnit timeUnit, int requestLimit) {
         this.apiRequestLimit = requestLimit;
         timer.schedule(new TimerTask() {
             @Override
